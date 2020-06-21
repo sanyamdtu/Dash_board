@@ -1,21 +1,21 @@
 import React from "react";
 import "./App.css";
 import ResponseTime from "./components/graphs/response_time";
-import Question_analysis from "./components/graphs/question_analysis";
+import Questionanalysis from "./components/graphs/question_analysis";
 import Analytics from "./components/graphs/analytics";
-import User_info from "./components/user/user";
+import Userinfo from "./components/user/user";
 import Skills from "./components/skills/skills";
-import Quiz_score from "./components/progress/quiz_score";
+import Quizscore from "./components/progress/quiz_score";
 function App() {
   return (
     <div className="container">
       <div className="row container">
-        <User_info />
-        <Quiz_score />
+        <Userinfo />
+        <Quizscore />
       </div>
 
       <div className="row ">
-        <Question_analysis legendPosition="bottom" />
+        <Questionanalysis legendPosition="bottom" />
         <ResponseTime legendPosition="bottom" />
         <Analytics legendPosition="bottom" />
       </div>
